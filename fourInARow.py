@@ -52,7 +52,7 @@ def draw_board(board):
 		for r in range(ROW_COUNT):
 			pygame.draw.rect(screen, BLUE, (c*SQUARESIZE, r*SQUARESIZE + SQUARESIZE, SQUARESIZE, SQUARESIZE))
 			pygame.draw.circle(screen, BLACK, (c*SQUARESIZE + SQUARESIZE//2, r*SQUARESIZE + SQUARESIZE//2), RADIUS)
-
+ 
 	for c in range(COLUMN_COUNT):
 		for r in range(ROW_COUNT):
 			if board[r][c] == 1:
